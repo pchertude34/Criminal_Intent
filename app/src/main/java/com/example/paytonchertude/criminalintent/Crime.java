@@ -12,6 +12,7 @@ public class Crime
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
+    private String mSuspect;
 
     public Crime()
     {
@@ -32,10 +33,14 @@ public class Crime
 
     public boolean isSolved() { return mSolved; }
 
+    public String getSuspect() { return mSuspect; }
+
     public void setDate(Date mDate) { this.mDate = mDate; }
 
     public void setTitle(String mTitle) { this.mTitle = mTitle; }
 
     public void setSolved(boolean solved) { this.mSolved = solved; }
+
+    public void setSuspect(String suspect) {this.mSuspect = suspect; }
 
 }
